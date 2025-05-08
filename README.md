@@ -1,14 +1,14 @@
 # What are some differences between interfaces and types in TypeScript?
 
-TypeScript provides two main ways to describe the shape and structure of data: `interface` and `type`. At first glance, they appear to be interchangeable, and in many cases they are. However, there are key differences between the two that can significantly affect how you structure your code and organize your application.
+TypeScript provides two main ways to describe the shape and structure of data: interface and type. However, there are key differences between the two that can significantly affect how you structure your code and organize your application.
 
-In this blog post, we’ll explore the important distinctions between `interface` and `type`, when to use each, and best practices for clean and scalable TypeScript code.
+In this blog post, we’ll explore the important distinctions between interface and type, when to use each, and best practices for clean and scalable TypeScript code.
 
 ---
 
 ## Similarities at a Glance
 
-Before diving into the differences, it’s important to understand that both `interface` and `type` can be used to define object shapes.
+Before diving into the differences, it’s important to understand that both interface and type can be used to define object shapes.
 
 ```ts
 interface User {
@@ -132,12 +132,6 @@ class ConsoleLogger implements Logger {
 
 ---
 
-## 5. Tooling and Readability
-
-In many development environments, especially with modern editors like Visual Studio Code, interfaces tend to offer better readability and editor support. This includes better documentation, clearer auto-complete, and improved hover information.
-
----
-
 ## When Should You Use Each?
 
 | Use Case                                  | Recommended |
@@ -152,28 +146,28 @@ In many development environments, especially with modern editors like Visual Stu
 
 ## Final Thoughts
 
-Both `interface` and `type` are essential features of TypeScript. While they may seem similar, understanding their differences will help you make informed choices and write more maintainable and scalable code.
+Both interface and type are essential features of TypeScript. While they may seem similar, understanding their differences will help you make informed choices and write more maintainable and scalable code.
 
 A common best practice is:
 
-* Use `interface` for public APIs, object shapes, and extensible contracts.
-* Use `type` for more complex type definitions and union-based logic.
+* Use interface for public APIs, object shapes, and extensible contracts.
+* Use type for more complex type definitions and union-based logic.
 
 Choosing the right one depends on your specific use case, but using them appropriately will improve the clarity, safety, and quality of your TypeScript codebase.
 
 ---
 
-# What is the use of the `keyof` keyword in TypeScript? Provide an example.
+# What is the use of the keyof keyword in TypeScript? Provide an example.
 
-One of TypeScript's most powerful and underrated features is the `keyof` keyword. It plays a crucial role in creating **type-safe, dynamic, and reusable code**, especially when working with object properties.
+One of TypeScript's most powerful and underrated features is the keyof keyword. It plays a crucial role in creating **type-safe, dynamic, and reusable code**, especially when working with object properties.
 
-In this blog post, we will explore what `keyof` does, why it's useful, and walk through a practical example to solidify your understanding.
+In this blog post, we will explore what keyof does, why it's useful, and walk through a practical example to solidify your understanding.
 
 ---
 
-## What is `keyof`?
+## What is keyof?
 
-The `keyof` keyword in TypeScript is a **type operator** that returns a **union of string literal types** representing all the keys of an object type.
+The keyof keyword in TypeScript is a **type operator** that returns a **union of string literal types** representing all the keys of an object type.
 
 In simpler terms, if you give it an object type, it gives you a type that consists of **only the property names** of that object.
 
@@ -196,15 +190,15 @@ Here, `UserKeys` becomes a union type of all the keys in the `User` object.
 
 ---
 
-## Why is `keyof` Useful?
+## Why is keyof Useful?
 
-The primary benefit of `keyof` is that it allows you to **write generic functions** that are type-safe and can access object properties dynamically **without losing type information**.
+The primary benefit of keyof is that it allows you to **write generic functions** that are type-safe and can access object properties dynamically **without losing type information**.
 
 ---
 
 ## Practical Example: Dynamic Property Access
 
-Suppose you want to write a function that takes an object and a key and returns the value corresponding to that key. Here's how `keyof` helps:
+Suppose you want to write a function that takes an object and a key and returns the value corresponding to that key. Here's how keyof helps:
 
 ```ts
 function getValue<T, K extends keyof T>(obj: T, key: K): T[K] {
@@ -229,7 +223,7 @@ This is fully type-safe:
 
 ---
 
-## Common Use Cases of `keyof`
+## Common Use Cases of keyof
 
 * Creating dynamic form inputs or configurations
 * Type-safe data access in utility libraries
@@ -240,9 +234,9 @@ This is fully type-safe:
 
 ## Conclusion
 
-The `keyof` keyword in TypeScript empowers developers to write highly flexible, generic, and type-safe code. By constraining property keys to known values, it minimizes bugs and improves code predictability.
+The keyof keyword in TypeScript empowers developers to write highly flexible, generic, and type-safe code. By constraining property keys to known values, it minimizes bugs and improves code predictability.
 
-Understanding how to use `keyof` effectively is a fundamental step toward mastering advanced TypeScript patterns.
+Understanding how to use keyof effectively is a fundamental step toward mastering advanced TypeScript patterns.
 
 <br>
 
