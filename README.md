@@ -1,4 +1,4 @@
-# What are Some Differences Between Interfaces and Types in TypeScript?
+# What are some differences between interfaces and types in TypeScript?
 
 TypeScript provides two main ways to describe the shape and structure of data: `interface` and `type`. At first glance, they appear to be interchangeable, and in many cases they are. However, there are key differences between the two that can significantly affect how you structure your code and organize your application.
 
@@ -163,7 +163,7 @@ Choosing the right one depends on your specific use case, but using them appropr
 
 ---
 
-# Understanding `keyof` in TypeScript with Examples
+# What is the use of the `keyof` keyword in TypeScript? Provide an example.
 
 One of TypeScript's most powerful and underrated features is the `keyof` keyword. It plays a crucial role in creating **type-safe, dynamic, and reusable code**, especially when working with object properties.
 
@@ -243,3 +243,13 @@ This is fully type-safe:
 The `keyof` keyword in TypeScript empowers developers to write highly flexible, generic, and type-safe code. By constraining property keys to known values, it minimizes bugs and improves code predictability.
 
 Understanding how to use `keyof` effectively is a fundamental step toward mastering advanced TypeScript patterns.
+
+<br>
+
+
+# _Author: [Mahfuz Hasan Reza](https://github.com/mahfuzhasanreza/)_
+# _Get Connected with [Learn With Mahfuz](https://www.youtube.com/@learn-with-mahfuz)_
+  - _Subscribe to my channel on [YouTube](https://www.youtube.com/@learn-with-mahfuz)_
+  - _Follow me on [LinkedIn](https://www.linkedin.com/company/learn-with-mahfuz)_
+  - _Follow me on [Facebook](https://www.facebook.com/LearnWithMahfuzLWM)_
+  - _Connect with me on [LinkedIn](https://www.linkedin.com/in/mahfuzhasanreza/)_
